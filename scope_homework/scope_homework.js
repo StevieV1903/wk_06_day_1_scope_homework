@@ -62,20 +62,73 @@
 // My first instinct here is that suspect three would be Colonel Mustard. However this proved wrong and on running it, Mrs. Peacock is suspect three.
 
 // EPISODE 5
-const scenario = {
-  murderer: 'Miss Scarlet',
-  room: 'Kitchen',
-  weapon: 'Candle Stick'
-};
+// const scenario = {
+//   murderer: 'Miss Scarlet',
+//   room: 'Kitchen',
+//   weapon: 'Candle Stick'
+// };
+//
+// const changeWeapon = function(newWeapon) {
+//   scenario.weapon = newWeapon;
+// }
+//
+// const declareWeapon = function() {
+//   return `The weapon is the ${scenario.weapon}.`;
+// }
+//
+// changeWeapon('Revolver');
+// const verdict = declareWeapon();
+// console.log(verdict);
+//
+// 'The weapon is the Revolver'. The changeWeapon method changes the weapon from Candle Stick to Revolver
 
-const changeWeapon = function(newWeapon) {
-  scenario.weapon = newWeapon;
+// EPISODE 6
+// let murderer = 'Colonel Mustard';
+//
+// const changeMurderer = function() {
+//   murderer = 'Mr. Green';
+//
+//   const plotTwist = function() {
+//     murderer = 'Mrs. White';
+//   }
+//   plotTwist();
+// }
+//
+// const declareMurderer = function () {
+//   return `The murderer is ${murderer}.`;
+// }
+//
+// changeMurderer();
+// const verdict = declareMurderer();
+// console.log(verdict);
+//
+// The murderer in this case should be Mrs.White being called in the function plotTwist()
+
+// EPISODE 7
+let murderer = 'Professor Plum';
+
+const changeMurderer = function() {
+  murderer = 'Mr. Green';
+
+  const plotTwist = function() {
+    let murderer = 'Colonel Mustard';
+
+    const unexpectedOutcome = function() {
+      murderer = 'Miss Scarlet';
+    }
+
+    unexpectedOutcome();
+  }
+
+  plotTwist();
 }
 
-const declareWeapon = function() {
-  return `The weapon is the ${scenario.weapon}.`;
+const declareMurderer = function() {
+  return `The murderer is ${murderer}.`;
 }
 
-changeWeapon('Revolver');
-const verdict = declareWeapon();
+changeMurderer();
+const verdict = declareMurderer();
 console.log(verdict);
+
+// My first instinct here is that the murderer should be Mr.Green from within the function changeMurderer(). This proved correct when I ran the terminal.
