@@ -105,30 +105,85 @@
 // The murderer in this case should be Mrs.White being called in the function plotTwist()
 
 // EPISODE 7
-let murderer = 'Professor Plum';
-
-const changeMurderer = function() {
-  murderer = 'Mr. Green';
-
-  const plotTwist = function() {
-    let murderer = 'Colonel Mustard';
-
-    const unexpectedOutcome = function() {
-      murderer = 'Miss Scarlet';
-    }
-
-    unexpectedOutcome();
-  }
-
-  plotTwist();
-}
-
-const declareMurderer = function() {
-  return `The murderer is ${murderer}.`;
-}
-
-changeMurderer();
-const verdict = declareMurderer();
-console.log(verdict);
+// let murderer = 'Professor Plum';
+//
+// const changeMurderer = function() {
+//   murderer = 'Mr. Green';
+//
+//   const plotTwist = function() {
+//     let murderer = 'Colonel Mustard';
+//
+//     const unexpectedOutcome = function() {
+//       murderer = 'Miss Scarlet';
+//     }
+//
+//     unexpectedOutcome();
+//   }
+//
+//   plotTwist();
+// }
+//
+// const declareMurderer = function() {
+//   return `The murderer is ${murderer}.`;
+// }
+//
+// changeMurderer();
+// const verdict = declareMurderer();
+// console.log(verdict);
 
 // My first instinct here is that the murderer should be Mr.Green from within the function changeMurderer(). This proved correct when I ran the terminal.
+
+// EPISODE 8
+// const scenario = {
+//   murderer: 'Mrs. Peacock',
+//   room: 'Conservatory',
+//   weapon: 'Lead Pipe'
+// };
+//
+// const changeScenario = function() {
+//   scenario.murderer = 'Mrs. Peacock';
+//   scenario.room = 'Dining Room';
+//
+//   const plotTwist = function(room) {
+//     if (scenario.room === room) {
+//       scenario.murderer = 'Colonel Mustard';
+//     }
+//
+//     const unexpectedOutcome = function(murderer) {
+//       if (scenario.murderer === murderer) {
+//         scenario.weapon = 'Candle Stick';
+//       }
+//     }
+//
+//     unexpectedOutcome('Colonel Mustard');
+//   }
+//
+//   plotTwist('Dining Room');
+// }
+//
+// const declareWeapon = function() {
+//   return `The weapon is ${scenario.weapon}.`
+// }
+//
+// changeScenario();
+// const verdict = declareWeapon();
+// console.log(verdict);
+
+// Total guess but by following the control flow, the weapon should be Candle Stick? Wow, was not expecting that to be correct!!
+
+// EPISODE 9
+
+// let murderer = 'Professor Plum';
+//
+// if (murderer === 'Professor Plum') {
+//   let murderer = 'Mrs. Peacock';
+// }
+//
+// const declareMurderer = function() {
+//   return `The murderer is ${murderer}.`;
+// }
+//
+// const verdict = declareMurderer();
+// console.log(verdict);
+
+// The murdered in this case should be declared as Mrs. Peacock. Nope that was going to be too easy. Not sure how Professor Plum could possibly have commited this murder?
