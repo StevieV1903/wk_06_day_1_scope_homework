@@ -30,3 +30,33 @@
 // declareMurderer is calling the function changeMurderer and in this case the output will be 'The murderer is Mrs. Peacock'.
 
 // EPISODE 3
+// let murderer = 'Professor Plum';
+//
+// const declareMurderer = function() {
+//   let murderer = 'Mrs. Peacock';
+//   return `The murderer is ${murderer}.`;
+// }
+//
+// const firstVerdict = declareMurderer();
+// console.log('First Verdict: ', firstVerdict);
+//
+// const secondVerdict = `The murderer is ${murderer}.`;
+// console.log('Second Verdict: ', secondVerdict);
+//
+// The firstVerdict is calling the declareMurderer function and the output will be Mrs. Peacock. The second verdict the murderer is Professor Plum.
+
+// EPISODE 4
+let suspectOne = 'Miss Scarlet';
+let suspectTwo = 'Professor Plum';
+let suspectThree = 'Mrs. Peacock';
+
+const declareAllSuspects = function() {
+  let suspectThree = 'Colonel Mustard';
+  return `The suspects are ${suspectOne}, ${suspectTwo}, ${suspectThree}.`;
+}
+
+const suspects = declareAllSuspects();
+console.log(suspects);
+console.log(`Suspect three is ${suspectThree}.`);
+
+// My first instinct here is that suspect three would be Colonel Mustard.
